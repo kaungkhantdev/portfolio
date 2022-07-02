@@ -4560,7 +4560,7 @@ textarea.form-control-lg {
 
 .badge {
   display: inline-block;
-  padding: 0.35em 0.65em;
+  padding: 8px 8px;
   font-size: 0.75em;
   font-weight: 700;
   line-height: 1;
@@ -4568,7 +4568,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .badge:empty {
   display: none;
