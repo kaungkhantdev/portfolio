@@ -2,7 +2,7 @@
 @import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 $border-radius:              8px;
-$card-border-radius:         16px;
+$card-border-radius:         12px;
 $font-family-sans-serif:       'Poppins', sans-serif;
 $font-family-monospace:         'Montserrat', sans-serif;
 $dark:  #121212;
@@ -191,7 +191,31 @@ html{
   transform: scale(1);
 }
 
+//portfolios section
+.nav-pills .nav-link{
+  color: var(--bs-white) !important;
+}
 
+.portfolio-card-main{
+  //height: 700px;
+}
+.img-main-portfolio{
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+.img-portfolio-half{
+  height: 282px;
+  object-fit: cover;
+  object-position: top;
+}
+
+//recent projects
+.recent-img{
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
 @media screen and (max-width: 992px) {
   .nav-link::after, .active-nav::after{
     width: 100%;

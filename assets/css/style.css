@@ -4191,7 +4191,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 16px;
+  border-radius: 12px;
 }
 .card > hr {
   margin-right: 0;
@@ -4203,13 +4203,13 @@ textarea.form-control-lg {
 }
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
 }
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
 }
 .card > .card-header + .list-group,
 .card > .list-group + .card-footer {
@@ -4245,7 +4245,7 @@ textarea.form-control-lg {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
-  border-radius: 15px 15px 0 0;
+  border-radius: 11px 11px 0 0;
 }
 
 .card-footer {
@@ -4254,7 +4254,7 @@ textarea.form-control-lg {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 11px 11px;
 }
 
 .card-header-tabs {
@@ -4276,7 +4276,7 @@ textarea.form-control-lg {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: 15px;
+  border-radius: 11px;
 }
 
 .card-img,
@@ -4287,14 +4287,14 @@ textarea.form-control-lg {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
 }
 
 .card-group > .card {
@@ -10273,6 +10273,28 @@ html {
   top: 6px;
   opacity: 1;
   transform: scale(1);
+}
+
+.nav-pills .nav-link {
+  color: var(--bs-white) !important;
+}
+
+.img-main-portfolio {
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.img-portfolio-half {
+  height: 282px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.recent-img {
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
 }
 
 @media screen and (max-width: 992px) {
