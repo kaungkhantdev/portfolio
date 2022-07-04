@@ -10325,6 +10325,12 @@ input, textarea {
   .custom-text {
     width: 100% !important;
   }
+  .carousel-icon {
+    width: 45px;
+    padding: 5px;
+    background-color: var(--bs-primary);
+    border-radius: 8px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
