@@ -145,17 +145,29 @@ html{
   transform: scale(1);
 }
 
-//about section
-
-.about-img{
-  transition: 0.5s
+//home section
+.up-header{
+  font-size: 1.51rem;
+  font-weight: 400;
 }
+
+.secondary-header{
+  font-size: 2.43rem;
+  font-weight: 400;
+}
+
+.s-header{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+//about section
 
 .card{
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   transition: 0.5s;
 }
-.card:hover, .about-img:hover{
+.card:hover{
   transform: translateY(-3px);
 }
 
@@ -216,6 +228,17 @@ html{
   object-fit: cover;
   object-position: top;
 }
+
+//contact section
+label{
+  color: var(--bs-white) !important;
+}
+input, textarea{
+  color: var(--bs-white) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  background-color: transparent !important;
+}
+
 @media screen and (max-width: 992px) {
   .nav-link::after, .active-nav::after{
     width: 100%;
