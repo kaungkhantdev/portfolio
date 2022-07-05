@@ -7,46 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RiO's Portfolio</title>
     <link rel="icon" href="./assets/img/logo.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="bg-dark">
 
 <!--nav -->
-<nav class="navbar header navbar-expand-lg navbar-dark position-fixed w-100 bg-dark">
+<nav class="navbar header navbar-expand-lg navbar-dark position-fixed w-100 bg-dark" id="header">
     <div class="container">
         <a class="navbar-brand" href="index.html">
            <div class="d-flex align-items-center">
-               <img src="./assets/img/logo.png" alt="" class="me-2" width="30px">
-               <span class="font-monospace" style="font-weight: 500">RiO</span>
+               <img src="./assets/img/logo.png" alt="" class="me-2" width="35px">
+<!--               <span class="font-monospace" style="font-weight: 500">RiO</span>-->
            </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <div class=""  id="menu" >
+                <div class="menu-item" id="menuItem"></div>
+            </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="active-nav nav-link " aria-current="page" href="#home">Home</a>
+                    <a class="active-nav nav-link home" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link about" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolios</a>
+                    <a class="nav-link portfolio" href="#portfolio">Portfolios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link project" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link contact" href="#contact">Contact</a>
                 </li>
             </ul>
-            <div class="d-flex">
-                <a href="https://github.com" class="text-decoration-none link-icon">
+            <div class="d-flex my-3 my-lg-0">
+                <a href="https://github.com/mgkaungkhantzaw" class="text-decoration-none link-icon">
                     <i class="bi bi-github text-white nav-icon"></i>
                 </a>
-                <a href="https://facebook.com" class="text-decoration-none mx-3 link-icon">
+                <a href="https://www.facebook.com/profile.php?id=100020426018426" class="text-decoration-none mx-3 link-icon">
                     <i class="bi bi-facebook text-white nav-icon"></i>
                 </a>
                 <a href="https://instragram.com" class="text-decoration-none link-icon">
@@ -84,8 +87,8 @@
                         </p>
                     </div>
                     <div class="mt-4">
-                        <button class="me-2 btn btn-primary">Contact Me</button>
-                        <button class="btn btn-outline-primary"><i class="bi bi-layers me-1"></i>Portfolios</button>
+                        <a href="tel:09768700966" class="me-2 btn btn-primary">Contact Me</a>
+                        <a href="" class="btn btn-outline-primary"><i class="bi bi-layers me-1"></i>Portfolios</a>
                     </div>
                 </div>
             </div>
@@ -971,8 +974,9 @@
         </div>
     </div>
     <div class="position-relative">
-        <div class="mouse position-absolute start-0 end-0 mx-auto text-center" style="bottom: 50px">
+        <div class="mouse position-absolute start-0 end-0 mx-auto text-center floating" style="bottom: 50px">
             <i class="bi-mouse text-white fs-3"></i>
+            <i class="d-block bi bi-chevron-double-down text-white"></i>
         </div>
     </div>
 </section>
@@ -1140,7 +1144,7 @@
                     <div class="">
                         <div class="card bg-transparent">
                             <div class="card-body">
-                                <a href="" class="text-decoration-none">
+                                <a href="https://mms-it.com/" target="_blank" class="text-decoration-none">
                                     <div class="mb-3 d-flex align-items-center justify-content-between">
                                         <div class="display-5 up-header" >
                                             <span class="text-white font-monospace">MMSIT</span>
@@ -1200,7 +1204,7 @@
                     <div class="">
                         <div class="card bg-transparent">
                             <div class="card-body">
-                                <a href="" class="text-decoration-none">
+                                <a href="https://www.patheinuniversity.edu.mm/" target="_blank" class="text-decoration-none">
                                     <div class="mb-3 d-flex align-items-center justify-content-between">
                                         <div class="display-5 up-header" >
                                             <span class="text-white font-monospace">Pathein University</span>
@@ -1241,7 +1245,7 @@
                     <div class="">
                         <div class="card bg-transparent">
                             <div class="card-body">
-                                <a href="" class="text-decoration-none">
+                                <a href="https://www.aprogrammer.blog/" target="_blank" class="text-decoration-none">
                                     <div class="mb-3 d-flex align-items-center justify-content-between">
                                         <div class="display-5 up-header" >
                                             <span class="text-white font-monospace">A Programmer</span>
@@ -1291,7 +1295,7 @@
                     <div class="">
                         <div class="card bg-transparent">
                             <div class="card-body">
-                                <a href="" class="text-decoration-none">
+                                <a href="https://www.facebook.com/codelab.mm" target="_blank" class="text-decoration-none">
                                     <div class="mb-3 d-flex align-items-center justify-content-between">
                                         <div class="display-5 up-header" >
                                             <span class="text-white font-monospace">Code-Lab</span>
@@ -2024,7 +2028,7 @@
                 <div class="col-12">
                     <div class="mt-5">
                         <div class="card overflow-hidden" style="border: none !important;">
-                            <iframe class="crad" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15472196.28992418!2d87.63588879259333!3d18.780690542334817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305652a7714e2907%3A0xba7b0ee41c622b11!2sMyanmar%20(Burma)!5e0!3m2!1sen!2smm!4v1656906578323!5m2!1sen!2smm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="crad" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15472196.28992418!2d87.63588879259333!3d18.780690542334817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305652a7714e2907%3A0xba7b0ee41c622b11!2sMyanmar%20(Burma)!5e0!3m2!1sen!2smm!4v1656906578323!5m2!1sen!2smm" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -2040,19 +2044,19 @@
             <div class="">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link text-white" style="background-color: transparent;" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">About</a>
+                        <a class="nav-link text-white" style="background-color: transparent;" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#portfolio">Portfolios</a>
+                        <a class="nav-link text-white" style="background-color: transparent;" href="#portfolio">Portfolios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#projects">Projects</a>
+                        <a class="nav-link text-white" style="background-color: transparent;" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contact</a>
+                        <a class="nav-link text-white" style="background-color: transparent;" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -2071,10 +2075,10 @@
                    <span class="font-monospace text-white" style="font-weight: 500">Made with <i class="bi bi-heart"></i> by RiO</span>
                </div>
                <div class="d-flex">
-                   <a href="https://github.com" class="text-decoration-none link-icon">
+                   <a href="https://github.com/mgkaungkhantzaw" class="text-decoration-none link-icon">
                        <i class="bi bi-github text-white nav-icon"></i>
                    </a>
-                   <a href="https://facebook.com" class="text-decoration-none mx-3 link-icon">
+                   <a href="https://www.facebook.com/profile.php?id=100020426018426" class="text-decoration-none mx-3 link-icon">
                        <i class="bi bi-facebook text-white nav-icon"></i>
                    </a>
                    <a href="https://instragram.com" class="text-decoration-none link-icon">
@@ -2087,6 +2091,7 @@
 </section>
 
 <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/node_modules/aos/dist/aos.js"></script>
 <script src="./assets/js/app.js"></script>
 </body>
 </html>
