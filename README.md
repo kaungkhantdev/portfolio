@@ -16,8 +16,5 @@
 ### This is My success
 
 
-### Fonts Used
-
-https://fonts.google.com/specimen/Inter
 
 
