@@ -65,3 +65,11 @@ AOS.init({
     duration: 1000,
     once : true
 });
+
+
+let typed = new Typed(".auto-type", {
+    strings: ['Kaung Khant Zaw','Web Developer'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+});

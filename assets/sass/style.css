@@ -11217,56 +11217,6 @@ html {
   color: var(--bs-primary) !important;
 }
 
-.fade-text-box {
-  height: 80px;
-}
-
-.animated-item {
-  display: block;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
-}
-
-.animated-item:nth-child(2n+2) {
-  animation-delay: 2s;
-}
-
-.animated-item:nth-child(3n+3) {
-  animation-delay: 4s;
-}
-
-@keyframes BottomTotop {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  25% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  30% {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .nav-link {
   transition: 0.3s;
   position: relative;
@@ -11323,7 +11273,7 @@ html {
 
 .secondary-header {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .s-header {
@@ -11333,7 +11283,7 @@ html {
 
 .card {
   border: none !important;
-  background-color: #0d1117 !important;
+  background-color: var(--bs-secondary) !important;
   transition: 0.5s;
 }
 
@@ -11370,7 +11320,7 @@ label {
 input, textarea {
   color: var(--bs-white) !important;
   border: none !important;
-  background-color: #0d1117 !important;
+  background-color: var(--bs-secondary) !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -11398,15 +11348,6 @@ input, textarea {
     padding: 3px;
     background-color: var(--bs-primary);
     border-radius: 8px;
-  }
-
-  .fade-text-box {
-    height: 55px;
-  }
-}
-@media screen and (max-width: 578px) {
-  .fade-text-box {
-    height: 45px;
   }
 }
 
