@@ -6,8 +6,10 @@ $border-radius:              8px;
 $card-border-radius:         12px;
 $font-family-sans-serif:       'Raleway', sans-serif;
 $font-family-monospace:         'Raleway', sans-serif;
-$dark: #020409;
-$secondary: #0d1117;
+$dark: #1b2a4e;
+$secondary: #f1f4f8;
+$success: #eaeffd;
+$danger:#fafcfe;
 $input-padding-x: 16px;
 $input-padding-y: 8px;
 $btn-padding-x: 16px;
@@ -75,14 +77,18 @@ html{
 
 //menu-icon animation
 
+.pd-l{
+  padding: 0 90px !important;
+}
+
 // header scroll animation
 #header{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5000;
+  z-index: 500;
   transition: 0.5s;
-  backdrop-filter: blur(20px);
+  background-color: var(--bs-white);
 }
 
 
@@ -91,8 +97,7 @@ html{
 }
 
 .scroll-up{
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: #161b2290 !important;
+  box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0, 0.08) !important;
 }
 
 .floating{
@@ -109,10 +114,6 @@ html{
 }
 
 
-//header
-.header{
-  z-index: 2000;
-}
 
 //icon in header
 .link-icon{
@@ -254,7 +255,6 @@ html{
 
 .card{
   border: none !important;
-  background-color: var(--bs-secondary) !important;
   transition: 0.5s;
 }
 .card:hover{
@@ -295,9 +295,11 @@ html{
 
 //portfolios section
 .nav-pills .nav-link{
+  color: var(--bs-dark) !important;
+}
+.nav-pills .nav-link.active{
   color: var(--bs-white) !important;
 }
-
 .portfolio-card-main{
   //height: 700px;
 }
@@ -315,6 +317,7 @@ html{
 //recent projects
 .recent-img{
   height: 600px;
+  width: 500px;
   object-fit: cover;
   object-position: top;
 }
@@ -326,15 +329,18 @@ label{
 input, textarea{
   color: var(--bs-white) !important;
   border: none !important;
-  background-color: var(--bs-secondary) !important;
+  background-color: rgba(82, 82, 108, 0.49) !important;
 }
 
 @media screen and (max-width: 992px) {
+  .pd-l{
+    padding: 0 12px !important;
+  }
   .navbar-nav{
     margin: 1rem 0 !important;
   }
   .nav-link{
-    background-color: #161b22;
+    background-color: var(--bs-secondary);
     border-radius: 8px;
     padding: 1rem;
     margin: 4px 0;
