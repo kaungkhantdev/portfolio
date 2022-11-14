@@ -28,6 +28,31 @@
   <script type="module" crossorigin src="./assets/index.bb72b470.js"></script>
   <link rel="stylesheet" href="./assets/index.8d76ece7.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- blog  -->
+  <style>
+    .blog{
+      color: white !important;
+      background-image: url('https://images.pexels.com/photos/4050297/pexels-photo-4050297.jpeg?auto=compress&cs=tinysrgb&w=1600');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .blog::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      border-radius: 8px;
+      background: #00c6ff;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      opacity: 0.9;
+
+    }
+  </style>
 </head>
 <body>
 <!--nav -->
@@ -304,63 +329,71 @@
   </div>
 </section>
 
-<div class="bg-secondary">
 
-  <!--blog project section-->
-  <section class="container pd-l it-news" id="it-news">
-    <div class="row my-lg-5 py-5">
-      <div class="col-12">
-        <div class="">
-          <div class="row g-0 align-items-center justify-content-center">
-            <div class="col-12 col-lg-5" data-aos="fade-up">
-              <div class="mb-5 mb-lg-0 p-0">
-                <img src="./assets/backend.204cc9f8.png" alt="" class="w-100 rounded mb-4">
-                <img src="./assets/dashboard.494aad8b.png" alt="" class="w-100 rounded">
+<!--blog project section-->
+<section class="container pd-l it-news " id="it-news">
+  <div class="row my-lg-5 py-5 blog rounded" data-aos="fade-up" >
+    <div class="col-12">
+      <div class="">
+        <div class="row g-0 align-items-center justify-content-center">
+          <div data-aos="fade-up" class="col-12 text-center">
+            <div class="p-lg-5">
+              <div class="secondary-header">
+                <span class="text-white font-monospace fw-bold">Blog Web Application with laravel (SSR)</span>
               </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="100" class="col-12 col-lg-5">
-              <div class="p-lg-5">
-                <div class="secondary-header">
-                  <span class="text-dark font-monospace">Blog Web Application with laravel (SSR)</span>
-                </div>
-                <p class="my-3 text-black-50">
-                  Created update features, do you love it. MVC with laravel, Database is MySql,
-                  created the best. You can post article and blog. Something or anything, you can write post. Thank you.
-                </p>
-                <div class="mb-5">
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="">
-                        <i class="bi bi-check2-square text-primary me-2"></i>
-                        <span class="text-dark">Create Account</span>
-                      </div>
-                      <div class="">
-                        <i class="bi bi-check2-square text-primary me-2"></i>
-                        <span class="text-dark">Upload Photo</span>
-                      </div>
+              <p class="my-3 text-white-50">
+                Created update features, do you love it. MVC with laravel, Database is MySql,
+                created the best. You can post article and blog. Something or anything, you can write post. Thank you.
+              </p>
+              <div class="mb-5">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="">
+                      <i class="bi bi-check2-square text-white me-2"></i>
+                      <span class="text-white"> 
+                      Admin Role ( CRUD, Features - ban user, unban user, change admin role, change password all users )
+                      </span>
                     </div>
-                    <div class="col-6">
-                      <div class="">
-                        <i class="bi bi-check2-square text-primary t me-2"></i>
-                        <span class="text-dark">CRUD</span>
-                      </div>
-                      <div class="">
-                        <i class="bi bi-check2-square text-primary me-2"></i>
-                        <span class="text-dark">Search Feature</span>
-                      </div>
+                    <div class="">
+                      <i class="bi bi-check2-square text-white me-2"></i>
+                      <span class="text-white">
+                        Categories ( CRUD )
+                        Posts ( CRUD )
+                        Post detail ( CRUD )
+                        Search Features
+                        Category by posts
+                        User by posts
+                        Database with MySQL
+                      </span>
                     </div>
+                    <div class="">
+                      <i class="bi bi-check2-square text-white me-2"></i>
+                      <span class="text-white"> Fullstack Development with laravel 7 </span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-check2-square text-white me-2"></i>
+                      <span class="text-white">Authentication, Authorization</span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-check2-square text-white me-2"></i>
+                      <span class="text-white">User Detail ( CRUD )</span>
+                    </div>
+                    
                   </div>
                 </div>
-                <a href="#" class="btn btn-primary">
-                  Live <i class="ms-1 bi bi-camera-video"></i>
-                </a>
               </div>
+              <a href="#" class="btn btn-light px-5 text-primary">
+                Live <i class="ms-1 bi bi-camera-video"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<div class="bg-secondary">
 
   <!--portfolio section-->
   <section class="container pd-l" id="portfolio">
@@ -831,6 +864,7 @@
   </section>
 
 </div>
+
 <div class="bg-dark">
   <!--contact section-->
   <section class="container pd-l" id="contact">
